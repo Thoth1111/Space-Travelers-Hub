@@ -118,8 +118,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 👤 **Amk lass**
 
-- GitHub: [@Thoth1111](https://github.com/amklass11)
-- Twitter: [@androvelle](https://twitter.com/amklass14)
+- GitHub: [@amklass11](https://github.com/amklass11)
+- Twitter: [@Amklass14](https://twitter.com/amklass14)
 - LinkedIn: [LinkedIn]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
