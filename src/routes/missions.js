@@ -1,6 +1,6 @@
 import React from "react";
 
-export const missions = () => {
+export const Missions = () => {
     return (
         <table>
             <thead>
@@ -12,7 +12,7 @@ export const missions = () => {
                 </tr>
             </thead>
             <tbody>
-                
+
             </tbody>
         </table>
     )
