@@ -1,19 +1,16 @@
-import React from "react";
+import React from 'react';
 
-export const Missions = () => {
-    return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Mission</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
+const Missions = () => (
+  <table>
+    <thead>
+      <tr>
+        <th>Mission</th>
+        <th>Description</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+);
 
-            </tbody>
-        </table>
-    )
-}
+export default Missions;

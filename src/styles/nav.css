@@ -1,11 +1,11 @@
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav a.active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
