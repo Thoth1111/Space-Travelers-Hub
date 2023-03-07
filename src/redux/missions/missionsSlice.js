@@ -18,10 +18,11 @@ export const missionsSlice = createSlice({
         builder
         .addCase(fetchMissions.fulfilled, (state, action) => {
             const missions = action.payload.map((mission) => {
-                action.payload.joined = false;
-                return missions;
+                mission.joined = false;
+                return mission;
             });
             state = [...missions];
+            return state;
         })
     }
 });
