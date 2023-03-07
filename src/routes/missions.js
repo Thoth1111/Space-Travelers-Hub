@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import '../styles/mission.css';
 
 const Missions = () => {
     const missionList = useSelector((state) => state.missions);
@@ -11,6 +12,7 @@ const Missions = () => {
                 <th>Mission</th>
                 <th>Description</th>
                 <th>Status</th>
+                <th> </th>
             </tr>
             </thead>
             <tbody>
