@@ -20,20 +20,23 @@ const Missions = () => {
           <tr key={mission.missionId}>
             <td>{mission.missionName}</td>
             <td>{mission.description}</td>
-            <td>{mission.booked ? (
-                <div className='active-status'><span>Active Member</span></div>)
+            <td>
+              {mission.booked ? (
+                <span className="active-status"><span>Active Member</span></span>)
                 : (
-                <div className='inactive-status'><span>NOT A MEMBER</span></div>
+                  <span className="inactive-status"><span>NOT A MEMBER</span></span>
                 )}
             </td>
-            <td>{mission.booked ? (
-                <button type='button' className='leave-btn'>
-                    Leave Mission
-                </button>)
-                : (
-                <button type='button' className='join-btn'>
-                    Join Mission
+            <td>
+              {mission.booked ? (
+                <button type="button" className="leave-btn">
+                  Leave Mission
                 </button>
+              )
+                : (
+                  <button type="button" className="join-btn">
+                    Join Mission
+                  </button>
                 )}
             </td>
           </tr>

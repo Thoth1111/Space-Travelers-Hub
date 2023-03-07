@@ -1,5 +1,5 @@
 table {
-  margin: 0 7%;
+  margin: 0 5%;
   border-collapse: collapse;
   border: 2px solid #dee2e6;
 }
@@ -33,10 +33,88 @@ table td:nth-child(1) {
   width: 12%;
 }
 
+table td:nth-child(3) {
+  text-align: center;
+}
+
+table td:nth-child(4) {
+  text-align: center;
+}
+
+table th:nth-child(2) {
+  width: 60%;
+}
+
 table th:nth-child(3) {
-  width: 12%;
+  width: 15%;
 }
 
 tbody > tr:nth-child(odd) {
   background-color: #ececec;
+}
+
+.active-status {
+  padding: 3px;
+  background-color: #0dcaf0;
+  text-align: center;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.active-status > span {
+  margin: 2px;
+  white-space: nowrap;
+  padding: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.leave-btn {
+  outline: none;
+  border: 1px solid #dc3545;
+  background-color: #fff;
+  color: #dc3545;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.leave-btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.inactive-status {
+  padding: 3px;
+  background-color: #6c757d;
+  text-align: center;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.inactive-status > span {
+  margin: 2px;
+  white-space: nowrap;
+  padding: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.join-btn {
+  outline: none;
+  border: 1px solid #6c757d;
+  background-color: #fff;
+  color: #6c757d;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  background-color: #6c757d;
+  color: #fff;
 }
