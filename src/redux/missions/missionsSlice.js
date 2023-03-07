@@ -17,10 +17,12 @@ export const missionsSlice = createSlice({
     extraReducers(builder) {
         builder
         .addCase(fetchMissions.fulfilled, (state, action) => {
-            const missions = action.payload.map((mission) => {
-                mission.joined = false;
-                return mission;
-            });
+            const missions = action.payload.map(({mission_id, mission_name, description}) => ({
+               mission_id,
+               mission_name,
+               description,
+               join_status: false,
+            }));
             state = [...missions];
             return state;
         })
