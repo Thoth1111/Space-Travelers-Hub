@@ -24,4 +24,6 @@ export const missionsSlice = createSlice({
             state = [...missions];
         })
     }
-})
+});
+
+export default missionsSlice.reducer;
