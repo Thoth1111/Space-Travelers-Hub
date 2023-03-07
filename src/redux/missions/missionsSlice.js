@@ -25,7 +25,7 @@ export const missionsSlice = createSlice({
           missionId,
           missionName,
           description,
-          join_status: false,
+          booked: false,
         }));
         return [...state, ...missions];
       });
