@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { joinMission } from '../redux/missions/missionsSlice';
+import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 import '../styles/mission.css';
 
 const Missions = () => {
@@ -8,6 +8,9 @@ const Missions = () => {
   const dispatch = useDispatch();
   const handleJoinMission = (id) => {
     dispatch(joinMission(id));
+  };
+  const handleLeaveMission = (id) => {
+    dispatch(leaveMission(id));
   };
 
   return (
@@ -34,7 +37,11 @@ const Missions = () => {
             </td>
             <td>
               {mission.booked ? (
-                <button type="button" className="leave-btn">
+                <button
+                  type="button"
+                  className="leave-btn"
+                  onClick={() => handleLeaveMission(mission.missionId)}
+                >
                   Leave Mission
                 </button>
               )

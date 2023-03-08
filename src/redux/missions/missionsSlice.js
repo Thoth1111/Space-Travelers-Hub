@@ -21,9 +21,13 @@ export const missionsSlice = createSlice({
       });
       return newState;
     },
-    // leaveMission: (state, action) => {
-
-    // },
+    leaveMission: (state, action) => {
+      const newState = state.map((mission) => {
+        if (mission.missionId !== action.payload) return mission;
+        return { ...mission, booked: false };
+      });
+      return newState;
+    },
   },
   extraReducers(builder) {
     builder
