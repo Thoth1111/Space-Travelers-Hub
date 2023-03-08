@@ -1,9 +1,14 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { joinMission } from '../redux/missions/missionsSlice';
 import '../styles/mission.css';
 
 const Missions = () => {
   const missionList = useSelector((state) => state.missions);
+  const dispatch = useDispatch();
+  const handleJoinMission = (id) => {
+    dispatch(joinMission(id));
+  };
 
   return (
     <table>
@@ -34,7 +39,11 @@ const Missions = () => {
                 </button>
               )
                 : (
-                  <button type="button" className="join-btn">
+                  <button
+                    type="button"
+                    className="join-btn"
+                    onClick={() => handleJoinMission(mission.missionId)}
+                  >
                     Join Mission
                   </button>
                 )}
