@@ -15,6 +15,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
+    "redux-thunk": "^2.4.2",
     "redux-logger": "^3.0.6",
     "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
@@ -60,7 +61,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "react-test-renderer": "^18.2.0",
     "redux-mock-store": "^1.5.4",
-    "redux-thunk": "^2.4.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",

@@ -1,24 +1,23 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import { render, screen } from '@testing-library/react';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import Profile from '../routes/profile';
-import { useSelector } from 'react-redux';
 
 jest.mock('../redux/missions/missionsSlice', () => ({
   fetchMissions: jest.fn(),
 }));
 
 jest.mock('../routes/ReservedRockest', () => ({
-    __esModule: true,
-    default: jest.fn(() => <div data-testid="reserved-rockets"></div>),
+  __esModule: true,
+  default: jest.fn(() => <div data-testid="reserved-rockets" />),
 }));
 
 jest.mock('react-redux', () => ({
-    ...jest.requireActual('react-redux'),
-    useSelector: jest.fn(),
-  }));
+  ...jest.requireActual('react-redux'),
+  useSelector: jest.fn(),
+}));
 
 const mockStore = configureMockStore([thunk]);
 
@@ -42,23 +41,23 @@ describe('Profile component', () => {
       ],
       rockets: [
         {
-            rocketId: '141',
-            rocketName: 'Falcon 141',
-            reserved: false,
+          rocketId: '141',
+          rocketName: 'Falcon 141',
+          reserved: false,
         },
         {
-            rocketId: '400',
-            rocketName: 'Falcon 400',
-            reserved: true,
+          rocketId: '400',
+          rocketName: 'Falcon 400',
+          reserved: true,
         },
       ],
     });
 
     useSelector.mockImplementation((selector) => selector({
-        missions: store.getState().missions,
-        rockets: store.getState().rockets,
-     }));
-    });
+      missions: store.getState().missions,
+      rockets: store.getState().rockets,
+    }));
+  });
 
   it('renders correctly', () => {
     render(
