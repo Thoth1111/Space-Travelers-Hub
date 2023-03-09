@@ -1,0 +1,56 @@
+.container {
+  padding: 0;
+  margin: 2em 4em;
+}
+
+.rockets-ul-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.rocket-container {
+  display: flex;
+  gap: 10px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.2rem;
+  height: 100%;
+  line-height: 2rem;
+}
+
+.img-container img {
+  width: 20rem;
+}
+
+.rocket-cancel {
+  background-color: white;
+  border: 0.2px solid grey;
+  border-radius: 3px;
+  color: grey;
+  font-size: 1rem;
+  padding: 5px 7px;
+}
+
+.rocket-reserve {
+  background-color: rgb(8, 133, 206);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 7px;
+}
+
+.badge {
+  background-color: rgb(5, 166, 172);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  padding: 1px 4px;
+}
