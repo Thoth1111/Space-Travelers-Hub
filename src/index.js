@@ -5,8 +5,10 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import store from './redux/store';
 import { fetchMissions } from './redux/missions/missionsSlice';
+import { getRockets } from './redux/rockets.js/rockets';
 
 store.dispatch(fetchMissions());
+store.dispatch(getRockets());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
