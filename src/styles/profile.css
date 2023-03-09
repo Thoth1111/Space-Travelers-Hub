@@ -33,3 +33,10 @@ h1 {
 .entry-name {
   font-weight: normal;
 }
+
+.divide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}

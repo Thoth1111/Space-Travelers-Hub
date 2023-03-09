@@ -1,0 +1,13 @@
+.reserved-container {
+  width: 100%;
+}
+
+.reserved-container ul {
+  list-style-type: none;
+  border: 2px solid #7e7e7e;
+}
+
+.rocket-li {
+  padding: 1rem;
+  border-bottom: 0.5px;
+}
