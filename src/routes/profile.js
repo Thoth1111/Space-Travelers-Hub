@@ -9,25 +9,25 @@ const Profile = () => {
 
   return (
     <>
-      <div className='divide'>
+      <div className="divide">
         <section className="profile">
           <h1>My Missions</h1>
           <table className="missions">
-          <tbody>
-            {joinedMissions.map((mission) => (
-              <tr className="entry" key={mission.missionId}>
-                <td>
-                  {' '}
-                  <span className="entry-name">{mission.missionName}</span>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
-      <section className="profile">
-        <ReservedRockets />
-      </section>
+            <tbody>
+              {joinedMissions.map((mission) => (
+                <tr className="entry" key={mission.missionId}>
+                  <td>
+                    {' '}
+                    <span className="entry-name">{mission.missionName}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+        <section className="profile">
+          <ReservedRockets />
+        </section>
       </div>
     </>
   );
