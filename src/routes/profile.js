@@ -26,6 +26,7 @@ const Profile = () => {
           </table>
         </section>
         <section className="profile">
+          <h1>My Rockets</h1>
           <ReservedRockets />
         </section>
       </div>

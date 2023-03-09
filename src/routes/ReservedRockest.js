@@ -17,7 +17,6 @@ export default function ReservedRockets() {
   }
   return (
     <div>
-      <h1>My Rockets</h1>
       <h1>No Rockets Reserved</h1>
     </div>
   );
