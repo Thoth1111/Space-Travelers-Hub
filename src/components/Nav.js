@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import planetColors from '../images/planetColors.png';
-import '../styles/Nav.css';
+import '../styles/nav.css';
 
 function Nav() {
   const activeLink = ({ isActive }) => `nav-link${(isActive ? ' activated' : '')}`;
