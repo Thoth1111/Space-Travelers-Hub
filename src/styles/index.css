@@ -31,8 +31,8 @@ code {
   justify-content: space-between;
   align-items: center;
   background-color: #eee;
-  height: 60px; /* add a height to the navbar */
-  padding: 0 20px; /* add some padding to the navbar */
+  height: 60px;
+  padding: 0 20px; 
 }
 
 .navbar-logo {
