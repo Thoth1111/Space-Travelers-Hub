@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Missions from '../routes/missions';
 import Profile from '../routes/profile';
+import RocketsPage from '../routes/Rockets';
 import Nav from './Nav';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/missions" element={<Missions />} />
           <Route path="/profile" element={<Profile />} />
+          <React path="/" element={<RocketsPage />} />
         </Routes>
       </Router>
     </>
