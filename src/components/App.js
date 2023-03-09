@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/missions" element={<Missions />} />
           <Route path="/profile" element={<Profile />} />
-          <React path="/" element={<RocketsPage />} />
+          <Route path="/" element={<RocketsPage />} />
         </Routes>
       </Router>
     </>
