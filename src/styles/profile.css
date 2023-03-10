@@ -1,0 +1,46 @@
+h1 {
+  margin: 1% 4%;
+}
+
+.profile {
+  width: 40%;
+  margin: 0 5%;
+}
+
+.missions {
+  border-collapse: collapse;
+  margin: 10px 4%;
+  padding: 8px 15px;
+  width: 50%;
+}
+
+.entry {
+  width: 50%;
+  border: 2px solid #dfdfdf;
+  padding: 1rem;
+}
+
+.entry:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.entry:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.entry > td {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.entry-name {
+  font-weight: normal;
+}
+
+.divide {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
