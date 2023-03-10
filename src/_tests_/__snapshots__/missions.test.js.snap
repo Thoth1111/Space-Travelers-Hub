@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions component matches snapshot 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+         
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Seven
+      </td>
+      <td>
+        Seven is Divine
+      </td>
+      <td>
+        <span
+          class="active-status"
+        >
+          <span>
+            Active Member
+          </span>
+        </span>
+      </td>
+      <td>
+        <button
+          class="leave-btn"
+          type="button"
+        >
+          Leave Mission
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Eleven
+      </td>
+      <td>
+        rhymes with seven
+      </td>
+      <td>
+        <span
+          class="inactive-status"
+        >
+          <span>
+            NOT A MEMBER
+          </span>
+        </span>
+      </td>
+      <td>
+        <button
+          class="join-btn"
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
