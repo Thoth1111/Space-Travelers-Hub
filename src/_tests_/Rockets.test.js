@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import RocketsPage from '../styles/Rockets';
+import RocketsPage from '../styles/Rockets.css';
 
 const setupStore = (reserved) => {
   const preloadedState = {
@@ -51,6 +51,7 @@ describe('Test the App components', () => {
         <RocketsPage />
       </Provider>,
     );
+  });
 
   it('shows the Rockets page when clicking the navbar link', () => {
     const store = setupStore(false);
@@ -135,3 +136,4 @@ describe('Test the App components', () => {
     fireEvent.click(screen.queryByText('Cancel Reservation'));
     expect(screen.queryByText('Reserved')).toBeFalsy();
   });
+});
